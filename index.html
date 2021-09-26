@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vase shop</title>
+
+    <link rel="stylesheet" href="./css/styles.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header">
+                <div class="header_name">Vases</div>
+                <div class="search">
+                    <input class="search_input" id="search_input" type="text" placeholder="Type something..." />
+                    <button class="search_btn" id="search_btn" type="button">Search</button>
+                    <button class="clear search_btn" id="clear_search_btn" type="button">Clear</button>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <aside class="aside">
+                <h2>Manage vases</h2>
+                <div class="sort">
+                    Sort by volume
+                    <input type="checkbox" id="sort_checkbox">
+                    </label>
+                </div>
+                <hr>
+                <div class="count">
+                    <div>Count total price of your vases:</div>
+                    <button class="count_btn" id="count_btn" type="button">Count</button>
+                    <div>Total price: <span id="total-price">0</span> $.</div>
+                </div>
+            </aside>
+            <div class="vertical-line"></div>
+            <div>
+                <ul id="cards_container">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>
